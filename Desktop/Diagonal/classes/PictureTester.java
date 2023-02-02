@@ -28,6 +28,12 @@ public class PictureTester
     caterpillar.explore();
   }
   
+  public static void testRtoL(){
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.mirrorVerticalRtoL();
+    caterpillar.explore();
+  }
+  
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -53,6 +59,13 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void thorizontal(){
+    Picture swan = new Picture("images/swan.jpg");
+    swan.explore();
+    swan.horizontal();
+    swan.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -67,7 +80,9 @@ public class PictureTester
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
+    //testMirrorVertical();
+    //testRtoL();
+    thorizontal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
