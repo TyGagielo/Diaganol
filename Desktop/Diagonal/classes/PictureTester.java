@@ -66,6 +66,20 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void btot(){
+    Picture swan = new Picture("images/swan.jpg");
+    swan.explore();
+    swan.horizontalBtoT();
+    swan.explore();
+  }
+  
+  public static void testDiag(){
+    Picture theG = new Picture("images/beach.jpg");
+    theG.explore();
+    theG.diagonal();
+    theG.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -82,7 +96,9 @@ public class PictureTester
     //testFixUnderwater();
     //testMirrorVertical();
     //testRtoL();
-    thorizontal();
+    //thorizontal();
+    //btot();
+    testDiag();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
