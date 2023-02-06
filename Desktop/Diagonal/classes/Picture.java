@@ -185,8 +185,8 @@ public class Picture extends SimplePicture
         bottomPixel = pixels[2][2];
         
         topPixel.setColor(bottomPixel.getColor());
-        height--;
       }
+      height--;
     } 
   }
   
