@@ -176,8 +176,9 @@ public class Picture extends SimplePicture
     Pixel bottomPixel = null;
     
     int height = pixels.length;
+    int width = pixels[0].length;
     
-    for (int col = 0; col < height; col++)
+    for (int col = 0; col < width; col++)
     {
       for (int row = 0; row <  height; row++)
       {
