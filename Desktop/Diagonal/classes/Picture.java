@@ -178,17 +178,25 @@ public class Picture extends SimplePicture
     int height = pixels.length;
     int width = pixels[0].length;
     
-    for (int col = 0; col < width; col++)
+    int horizontal;
+    //check Taller
+    if (width < height){
+        horizontal = width;
+    } else{
+        horizontal = height;
+    }
+    
+    //flipDiag
+    for (int col = 0; col < horizontal; col++)
     {
-      for (int row = 0; row <  height; row++)
+      for (int row = 0; row <  horizontal; row++)
       {
+        bottomPixel = pixels[row][col];
         topPixel = pixels[col][row];
-        bottomPixel = pixels[height -1- row][width -1- col];
         
-        topPixel.setColor(bottomPixel.getColor());
+        bottomPixel.setColor(topPixel.getColor());
       }
-      height--;
-    } 
+    }
   }
   
   /** Mirror just part of a picture of a temple */
