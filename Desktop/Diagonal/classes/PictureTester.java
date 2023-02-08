@@ -80,6 +80,20 @@ public class PictureTester
     theG.explore();
   }
   
+  public static void testMirArms(){
+    Picture fourArm = new Picture("images/seagull.jpg");
+    fourArm.explore();
+    fourArm.mirrorArms();
+    fourArm.explore();
+  }
+  
+  public static void aFriendOrLover/*?*/(){
+    Picture fourArm = new Picture("images/seagull.jpg");
+    fourArm.explore();
+    fourArm.mirrorGull();
+    fourArm.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -98,7 +112,9 @@ public class PictureTester
     //testRtoL();
     //thorizontal();
     //btot();
-    testDiag();
+    //testDiag();
+    //testMirArms();
+    aFriendOrLover();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
