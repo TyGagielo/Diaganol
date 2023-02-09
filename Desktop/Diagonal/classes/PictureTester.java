@@ -95,7 +95,7 @@ public class PictureTester
   }
   
   public static void testMiCollage(){
-    Picture canvas = new Picture("640x900.jpg");
+    Picture canvas = new Picture("640x480.jpg");
     canvas.myCollage();
     canvas.explore();
   }
@@ -125,7 +125,7 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testCollage();
+    testMiCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();

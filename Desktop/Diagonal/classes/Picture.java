@@ -319,11 +319,8 @@ public class Picture extends SimplePicture
     Picture bot = new Picture("robot.jpg");
     bot.zeroBlue();
     this.copy(moon,0,0);
-    this.copy(moon,0,350);
-    this.copy(moon,0,700);
-    
+    this.copy(bot,196,157);
     this.mirrorVertical();
-    this.copy(bot,100,50);
     this.write("collage.jpg");
   }
   
