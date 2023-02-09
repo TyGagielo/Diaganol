@@ -94,6 +94,12 @@ public class PictureTester
     fourArm.explore();
   }
   
+  public static void testMiCollage(){
+    Picture canvas = new Picture("640x900.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -114,12 +120,12 @@ public class PictureTester
     //btot();
     //testDiag();
     //testMirArms();
-    aFriendOrLover();
+    //aFriendOrLover();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    //testCollage();
+    testCollage();
     //testCopy();
     //testEdgeDetection();
     //testEdgeDetection2();
