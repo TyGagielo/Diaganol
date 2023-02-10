@@ -58,6 +58,12 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+  public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
   
   public static void thorizontal(){
     Picture swan = new Picture("images/swan.jpg");
@@ -125,10 +131,10 @@ public class PictureTester
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
-    testMiCollage();
+    //testMiCollage();
     //testCopy();
-    //testEdgeDetection();
-    //testEdgeDetection2();
+    testEdgeDetection();
+    testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
